@@ -3,7 +3,7 @@ const num = 10;
 
 const printSegitiga = (num) => {
   if (typeof num === "number") {
-    for (let i = num; i >= 0; i--) {
+    for (let i = num; i >= 1; i--) {
       let str = "";
       for (let j = 1; j <= i; j++) {
         str += `${j}`;

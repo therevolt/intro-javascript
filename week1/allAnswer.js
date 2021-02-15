@@ -74,7 +74,7 @@ Grade = ${
           : nilaiRataRata <= 100 && "A"
       }`);
     } else {
-      console.log("Nilai Yang Di Input Salah");
+      console.log("Tipe Data/Nilai Yang Di Input Salah");
     }
   } else {
     console.log("Seluruh Nilai Harus Diisi");
