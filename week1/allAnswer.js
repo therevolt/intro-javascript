@@ -52,7 +52,7 @@ const biodata = {
 // console.log(biodata);
 
 // Soal 2
-const mtk = "";
+const mtk = 78;
 const bahasaIndonesia = 20;
 const bahasaInggris = 99;
 const ipa = 90;

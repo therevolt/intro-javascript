@@ -1,5 +1,5 @@
 // Soal 2
-const mtk = "23";
+const mtk = true;
 const bahasaIndonesia = 20;
 const bahasaInggris = 99;
 const ipa = 90;

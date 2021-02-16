@@ -21,11 +21,10 @@ data = {
   email: "ramaseftiansyah12@gmail.com",
   hobby: "ngoding",
 };
-console.log(data);
+// console.log(data);
 
 //b
 const {
   address: { street: jalan, city: kota },
 } = data;
-console.log(`Jalan : ${jalan}
-Kota : ${kota}`);
+console.log(address);
