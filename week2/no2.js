@@ -1,4 +1,4 @@
-const names = [
+const callback = () => [
   "Abigail",
   "Alexandra",
   "Alison",
@@ -25,7 +25,7 @@ const searchName = (string, maxStr, callback) => {
       newArr.push(arr[i]);
     }
   }
-  console.log(newArr);
+  newArr.length >= 1 ? console.log(newArr) : console.log("Tidak Ada Data Yang Ditemukan");
 };
 
-searchName("bi", 3, () => names);
+searchName("a", 4, callback);
