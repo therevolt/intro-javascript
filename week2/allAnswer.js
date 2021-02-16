@@ -165,7 +165,9 @@ const valueSelection = (valueOne, valueTwo, arr) => {
         selectionArr.push(value);
       }
     });
-    console.log(selectionArr.length > 0 ? selectionArr : "Jumlah angka dalam dataArray tidak ada");
+    console.log(
+      selectionArr.length > 0 ? selectionArr.sort() : "Jumlah angka dalam dataArray tidak ada"
+    );
   } else {
     console.log("Nilai akhir harus lebih besar dari nilai awal");
   }
