@@ -1,7 +1,7 @@
 // Jawaban Nomor 1
 // [1] Method toString()
 // Merubah Value Menjadi String
-// Return Dari Method Ini Adalah Value String
+// Return Dari Method Ini Adalah String
 
 // Contoh
 const num = 1000;
@@ -27,17 +27,13 @@ const index = data.indexOf(str);
 
 // -------------------------------------------------
 
-// [3] Method length
-// Menghitung Jumlah/Panjang String
-// Return Dari Method Ini Adalah Number Dari Jumlah String
-// Method Ini Hanya Berfungsi Untuk Tipe Data String
-// Selain Itu Akan Me-return Undefined
+// [3] Method join()
+// Menggabungkan Isi Array Dengan String Sesuai Parameter Inputan
 
 // Contoh
-const string = "saya belajar javascript";
-const lengthString = string.length;
-// console.log(`${string}
-// Memiliki Panjang Sebesar : ${lengthString}`);
+const arrToJoin = ["saya", "belajar", "javascript"];
+const joinArr = arrToJoin.join(" ");
+// console.log(joinArr);
 
 // -------------------------------------------------
 
@@ -120,7 +116,7 @@ array.push("bertambah");
 // -------------------------------------------------
 
 // Jawaban Nomor 2
-const names = [
+const callback = () => [
   "Abigail",
   "Alexandra",
   "Alison",
@@ -139,18 +135,18 @@ const names = [
   "Penelope",
 ];
 
-const searchName = (string, maxStr, callback) => {
+const searchName = (string, maxResult, callback) => {
   const arr = callback();
   const newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].toLowerCase().match(string) && newArr.length < maxStr) {
-      newArr.push(arr[i]);
+  arr.map((item) => {
+    if (item.toLowerCase().match(string) && newArr.length < maxResult) {
+      newArr.push(item);
     }
-  }
-  console.log(newArr);
+  });
+  newArr.length >= 1 ? console.log(newArr) : console.log("Tidak Ada Data Yang Ditemukan");
 };
 
-// searchName("an", 3, () => names);
+// searchName("p", 4, callback);
 
 // -------------------------------------------------
 

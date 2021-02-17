@@ -17,15 +17,15 @@ const callback = () => [
   "Penelope",
 ];
 
-const searchName = (string, maxStr, callback) => {
+const searchName = (string, maxResult, callback) => {
   const arr = callback();
   const newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].toLowerCase().match(string) && newArr.length < maxStr) {
-      newArr.push(arr[i]);
+  arr.map((item) => {
+    if (item.toLowerCase().match(string) && newArr.length < maxResult) {
+      newArr.push(item);
     }
-  }
+  });
   newArr.length >= 1 ? console.log(newArr) : console.log("Tidak Ada Data Yang Ditemukan");
 };
 
-searchName("a", 4, callback);
+searchName("p", 4, callback);
