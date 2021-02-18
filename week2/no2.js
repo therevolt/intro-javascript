@@ -28,4 +28,4 @@ const searchName = (string, maxResult, callback) => {
   newArr.length >= 1 ? console.log(newArr) : console.log("Tidak Ada Data Yang Ditemukan");
 };
 
-searchName("p", 4, callback);
+searchName("an", 4, callback);
