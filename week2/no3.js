@@ -1,4 +1,6 @@
 const valueSelection = (valueOne, valueTwo, arr) => {
+  if (typeof valueOne !== "number" || typeof valueTwo !== "number")
+    return console.log("Tipe Data Harus Number");
   if (arr.length < 5) {
     console.log("Array Harus Lebih Dari 5");
   } else if (valueOne < valueTwo) {
