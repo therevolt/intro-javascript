@@ -152,6 +152,8 @@ const searchName = (string, maxResult, callback) => {
 
 // Jawaban Nomor 3
 const valueSelection = (valueOne, valueTwo, arr) => {
+  if (typeof valueOne !== "number" || typeof valueTwo !== "number")
+    return console.log("Tipe Data Harus Number");
   if (arr.length < 5) {
     console.log("Array Harus Lebih Dari 5");
   } else if (valueOne < valueTwo) {
@@ -169,4 +171,4 @@ const valueSelection = (valueOne, valueTwo, arr) => {
   }
 };
 
-// valueSelection(5, 10, [20, 30, 50, 70, 90]);
+// valueSelection(1, 5, [2, 25, 4, 1, 90]);
