@@ -16,4 +16,4 @@ const valueSelection = (valueOne, valueTwo, arr) => {
   }
 };
 
-valueSelection(2, 3, [30, 50, 70, 90, 20]);
+valueSelection(1, 5, [2, 25, 4, 1, 90]);
