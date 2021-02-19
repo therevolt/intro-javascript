@@ -1,4 +1,5 @@
 // Latihan Callback Untuk Menampung Hasil Ajax
+// Jalankan Di Console Browser Chrome
 
 const mapData = (data) => {
   data.map((item) => {
