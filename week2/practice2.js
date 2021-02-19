@@ -14,7 +14,7 @@ const getData = (url, method) =>
         const result = JSON.parse(ajax.responseText);
         resolve(result);
       } else {
-        reject(new Error("Server Error!"));
+        reject(new Error(`${ajax.status} : Server Error`));
       }
     };
   });
