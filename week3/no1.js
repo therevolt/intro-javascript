@@ -8,7 +8,7 @@ const cekHariKerja = (day) => {
       if (cek) {
         resolve(cek);
       } else {
-        reject(new Error("Hari ini bukan hari kerja"));
+        reject(new Error(`Hari ${day} bukan hari kerja`));
       }
     }, 3000);
   });
@@ -26,7 +26,7 @@ cekHariKerja("minggu")
 // Penggunaan Try & Catch
 (async () => {
   try {
-    const cek = await cekHariKerja("minggu");
+    const cek = await cekHariKerja("senin");
     console.log(cek);
   } catch (error) {
     console.log(error.message);
