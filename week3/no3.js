@@ -40,23 +40,23 @@ const circumference = (value, type) => {
     if (typeof value !== "number" || typeof type !== "string")
       return reject(new Error("Tipe Data Parameter Salah"));
     if (value < 1) return reject(new Error("Parameter Harus Lebih Dari 1"));
-    setTimeout(() => {
-      if (type === "jari-jari") {
-        if (value % 7 === 0) {
-          resolve(2 * ((value / 7) * 22));
-        } else {
-          resolve(2 * (3.14 * value));
-        }
-      } else if (type === "diameter") {
-        if (value % 7 === 0) {
-          resolve((value / 7) * 22);
-        } else {
-          resolve(3.14 * value);
-        }
+    // setTimeout(() => {
+    if (type === "jari-jari") {
+      if (value % 7 === 0) {
+        resolve(2 * ((value / 7) * 22));
       } else {
-        reject(new Error("Parameter Ke-2 Salah"));
+        resolve(2 * (3.14 * value));
       }
-    }, 2000);
+    } else if (type === "diameter") {
+      if (value % 7 === 0) {
+        resolve((value / 7) * 22);
+      } else {
+        resolve(3.14 * value);
+      }
+    } else {
+      reject(new Error("Parameter Ke-2 Salah"));
+    }
+    // }, 2000);
   });
 };
 
